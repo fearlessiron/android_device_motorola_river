@@ -93,5 +93,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
+# MicroG
+PRODUCT_PACKAGES += \
+    GmsCore
+
 # Inherit from motorola sdm632-common
 $(call inherit-product, device/motorola/sdm632-common/common.mk)
